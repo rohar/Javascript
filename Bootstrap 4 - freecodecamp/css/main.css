@@ -10,40 +10,36 @@ html,h1,h2,h3,h4,h5,h6,a{
 	font-family: "Raleway", serif;
 }
 
-.navbar {
-    background-color: #F97300;
+.navbar{
+	background:#F97300;
 }
-
-.nav-link, .navbar-brand {
-    color: #f4f4f4;
-    cursor: pointer;
+.nav-link , .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
 }
-
-.nav-link {
-    margin-right: 1em !important;
+.nav-link{
+	margin-right: 1em !important;
 }
+.nav-link:hover{
+	background: #f4f4f4;
+	color: #f97300;
 
-.nav-link:hover {
-    background-color: #f4f4f4;
-    color: #F97300;
 }
-
-.navbar-collapse {
-    justify-content: flex-end;
+.navbar-collapse{
+ justify-content: flex-end;
 }
-
-.navbar-toggler {
-    background-color: #fff !important;
+.navbar-toggler{
+  background:#fff !important;
 }
 
 /* header style */
-.header {
-    background-image: url('../images/headerback.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
+.header{
+	position: relative;
+	background-image: url('../images/headerback.jpg');
 
+	background-size: cover;
+	background-position: center;
+}
 .overlay {
     position: absolute;
     min-height: 100%;
@@ -145,10 +141,51 @@ html,h1,h2,h3,h4,h5,h6,a{
     height: 12em;
 }
 
+@media and (max-width: 768px){
+    .team .item img{
+        width: 100%;
+    }	
+}
+   
 .blog .card-title {
     color: #f97300;
 }
 
 .blog .card-body {
     padding: 1em;
+}
+
+.team{
+	margin: 4em 0;
+	position: relative;
+
+}
+.team h1{
+	color:#F97300;
+	margin: 2em;	
+}
+.team .item{
+	position: relative;
+	overflow: hidden;	
+}
+.team .des{
+	background: #F97300;
+	color: #fff;
+	text-align: center;
+	border-top-right-radius: 93%;
+	transition:.3s ease-in-out;
+	position: absolute;
+	width: 88%;
+	bottom: 24px;
+
+
+}
+.team .item:hover .des{
+	height: 100%;
+	background:#f973007d;
+    position: absolute;
+	width: 89%;
+	padding: 5em;
+	top: 0;
+	border-top-right-radius: 0;
 }
